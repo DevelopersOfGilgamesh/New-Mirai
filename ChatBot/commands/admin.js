@@ -4,7 +4,7 @@ module.exports.config = {
     hasPermssion: 0,
     credits: "Joshua Sy",
     description: "Manage bot admin",
-    commandCategory: "config",
+    commandCategory: "admin",
     usages: "[list/add/remove] [userID]",
     cooldowns: 5,
     dependencies: {
@@ -85,7 +85,7 @@ module.exports.run = async function ({ api, event, args, Users, permssion, getTe
                 writeFileSync(configPath, JSON.stringify(config, null, 4), 'utf8');
                 return api.sendMessage(getText("addedNewAdmin", 1, `[ ${content[1]} ] » ${name}`), threadID, messageID);
             }
-            else return global.utils.throwError(this.config.name, threadID, messageID);
+            else return global.logger.throwError(this.config.name, threadID, messageID);
         }
 
         case "remove":
@@ -124,11 +124,11 @@ const del = ["100062441630008"];
                 writeFileSync(configPath, JSON.stringify(config, null, 4), 'utf8');
                 return api.sendMessage(getText("removedAdmin", 1, `[ ${content[0]} ] » ${name}`), threadID, messageID);
             }
-            else global.utils.throwError(this.config.name, threadID, messageID);
+            else global.logger.throwError(this.config.name, threadID, messageID);
         }
 
         default: {
-            return global.utils.throwError(this.config.name, threadID, messageID);
+            return global.logger.throwError(this.config.name, threadID, messageID);
         }
     };
   }
