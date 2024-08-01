@@ -8,15 +8,15 @@
         ""
     ],
     "eventDisabled": [],
-    "OWNER": "zach",
-    "BOT": "ChatBotV4",
-    "CREATOR": "zach",
+    "OWNER": "Aljur Pogoy",
+    "BOT": "Enkidu Chain of Heaven [ + ]",
+    "CREATOR": "Aljur Pogoy",
     "MADE": "",
-    "ONLY": "zach",
-    "BOTNAME": "ChatBotV4",
-    "PREFIX": "-",
+    "ONLY": "Aljur Pogoy",
+    "BOTNAME": "Enkidu Chain of Heaven [ + ]",
+    "PREFIX": "+",
     "ADMINBOT": [
-        "100064763179341"
+        "100073129302064"
     ],
     "DATABASE": {
         "sqlite": {
